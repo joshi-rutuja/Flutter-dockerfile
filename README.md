@@ -71,7 +71,7 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:
    e.	Proceed to view the application on localhost:8080 on your browser.
  
 
-##  4.	Push the image to Container registry
+##  4.	Push the image to Container Registry
 
    a.	Open your Cloud sdk
     
@@ -81,9 +81,12 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:
 	
           docker images
           
+	  
    c.	Configure authenctication
         Before you can push or pull images, you must configure Docker to use the gcloud command-line tool to authenticate requests to Container               Registry.
-          #### **gcloud auth configure-docker**
+	
+	
+          gcloud auth configure-docker
           
 
    d.	Add the image to container registry
