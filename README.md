@@ -1,11 +1,11 @@
 # Flutter-dockerfile
 A repo for docker file and server.sh file<br/>
-#Steps to containerize your app locally and deploy it on cloud run
+#Steps to containerize your app locally and deploy it on cloud run<br/>
 
-*Prerequisites: 1. Install Docker Desktop
-                2. Install Cloud SDK Shell
+*Prerequisites: 1. Install Docker Desktop<br/>
+                2. Install Cloud SDK Shell<br/>
                       
-To  deploy a Web App on Cloud Run, you need to follow these steps:
+To  deploy a Web App on Cloud Run, you need to follow these steps:<br/>
  **1. Create a Google Cloud project**
  **2. Create a Flutter WebApp project**
  **3. Containerizing the WebApp locally**
