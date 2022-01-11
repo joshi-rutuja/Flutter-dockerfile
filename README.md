@@ -63,11 +63,18 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:<br/>
 
    ####5.	Deploy Docker image to Cloud Run
     a.	You can deploy a container image that is stored in the Container Registry in the same project. Go to Cloud Platform > Navigation menu > Cloud         Run > Create Service ![create service](https://user-images.githubusercontent.com/96573282/148931485-7c9b8f34-9ea9-4223-bfd8-5df1a78821fd.png)
-    b.	Choose the image you want to deploy
+   
+   
+   b.	Choose the image you want to deploy
         ![select image](https://user-images.githubusercontent.com/96573282/148931722-880b3de2-5643-45fc-9be5-860cec32c6fc.png)
-    c.	Select service name and region
-    d.	Check ‘Allow unauthenticated invocations’
-    e.	Click ‘Create’ Button and wait for few minutes
-    f.	Once deployment is done, click your URL on the upper side corner to check your WebApp
+   
+   
+   c.	Select service name and region
+    
+   d.	Check ‘Allow unauthenticated invocations’
+    
+   e.	Click ‘Create’ Button and wait for few minutes
+   
+   f.	Once deployment is done, click your URL on the upper side corner to check your WebApp
 
 
