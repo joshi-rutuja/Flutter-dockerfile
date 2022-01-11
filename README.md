@@ -12,10 +12,10 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:<br/>
  **4. Deploy the image on Cloud Run**
  
   #### 1.	Create a Google Platform Project
-    a.	Create a Google cloud console account
-    b.	Go to Billing section and set budget alerts
-    c.	Enable the Cloud Build, Cloud Run, Container Registry, and Resource Manager APIs.
-    d.	Create your first project
+   a.	Create a Google cloud console account
+   b.	Go to Billing section and set budget alerts
+   c.	Enable the Cloud Build, Cloud Run, Container Registry, and Resource Manager APIs.
+   d.	Create your first project
     
     
    ####2.	 Create a Flutter Web App project
@@ -28,17 +28,20 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:<br/>
     a.	Now your Directory structure might look like this
         ![directory structure](https://user-images.githubusercontent.com/96573282/148927136-db0faa86-e5eb-44d7-82f0-5924800cc59a.png)
         
-    b.	Open the terminal from the application root folder and run the following command:
+   
+   b.	Open the terminal from the application root folder and run the following command:
           ####**docker build . -t flutter_docker**
     c.	 This will build a Docker image with the name flutter_docker. You can view this image from the installed Docker desktop application. You can            also view the image with the command docker images.
         ![Docker image created](https://user-images.githubusercontent.com/96573282/148928559-00ed1a74-0b4c-4c4e-93bb-f347e1d3a429.png)
         
-    d.	Run the image container
+   
+   d.	Run the image container
         Run the following command: 
           ####**docker run -i -p 8080:8080 -td flutter_docker**
         This command binds the port 5000 configured in the container to the TCP port 8080, accessible from the browser.
         
-    e.	Proceed to view the application on localhost:8080 on your browser.
+   
+   e.	Proceed to view the application on localhost:8080 on your browser.
  
 
    ####4.	Push the image to Container registry
