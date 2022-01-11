@@ -10,54 +10,57 @@
                       
 To  deploy a Web App on Cloud Run, you need to follow these steps:
 
- **1. Create a Google Cloud project**
+   **1. Create a Google Cloud project**
  
- **2. Create a Flutter WebApp project**
+   **2. Create a Flutter WebApp project**
  
- **3. Containerizing the WebApp locally**
+   **3. Containerizing the WebApp locally**
  
- **4. Deploy the image on Cloud Run**
+   **4. Deploy the image on Cloud Run**
  
  
  
  
 ## 1.	Create a Google Platform Project
          
-   a.	Create a Google cloud console account
+   a.	  Create a Google cloud console account
    
-   b.	Go to Billing section and set budget alerts
+   b.	  Go to Billing section and set budget alerts
    
-   c.	Enable the Cloud Build, Cloud Run, Container Registry, and Resource Manager APIs.
+   c.	  Enable the Cloud Build, Cloud Run, Container Registry, and Resource Manager APIs.
    
-   d.	Create your first project
+   d.	  Create your first project
     
     
 ## 2.	Create a Flutter Web App project
 
-   a.	Create a Flutter project or use a existing project
+   a.	  Create a Flutter project or use a existing project
   
-   b.	Add the attached Dockerfile into the Project root
+   b.	  Add the attached Dockerfile into the Project root
    
-   c.	Create a server Directory and a server.sh file inside the server folder 
+   c.	  Create a server Directory and a server.sh file inside the server folder 
 
 
 ##  3.	Containerizing the WebApp locally
 
-   a.	Now your Directory structure might look like this
-        ![directory structure](https://user-images.githubusercontent.com/96573282/148927136-db0faa86-e5eb-44d7-82f0-5924800cc59a.png)
+   a.	  Now your Directory structure might look like this
+   
+   ![directory structure](https://user-images.githubusercontent.com/96573282/148927136-db0faa86-e5eb-44d7-82f0-5924800cc59a.png)
         
    
-   b.	Open the terminal from the application root folder and run the following command:
+   b.	  Open the terminal from the application root folder and run the following command:
 	 
 	 
 	 
           docker build . -t flutter_docker
 					
-   c.	 This will build a Docker image with the name flutter_docker. You can view this image from the installed Docker desktop application. You can            also view the image with the command docker images.
-        ![Docker image created](https://user-images.githubusercontent.com/96573282/148928559-00ed1a74-0b4c-4c4e-93bb-f347e1d3a429.png)
+   c.	  This will build a Docker image with the name flutter_docker. You can view this image from the installed Docker desktop application. You can            also view the image with the command docker images.
+   
+   ![check dockr images](https://user-images.githubusercontent.com/96573282/148954099-61723298-2029-43d1-b4db-57e9f67f3c08.png)
+
         
    
-   d.	Run the image container
+   d.  	Run the image container
         Run the following command: 
 				
 				
@@ -89,17 +92,20 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:
 			 
 			 
 			
-            docker tag *imagename* gcr.io/* PROJECT_ID */* imagename *:latest*
+            docker tag imagename gcr.io/PROJECT_ID/imagename:latest*
 						
 					
   
    ii.	Push the image to Container Registry
 	 
 	 
-            docker push gcr.io/PROJECT_ID/image-name*
+            docker push gcr.io/PROJECT_ID/image-name
+	    
+	    
             
    e.	To confirm the image has been created, go to Google Cloud Platform > Navigation menu > Container Registry.
-        ![check container registry](https://user-images.githubusercontent.com/96573282/148931218-1456c3d1-b0c7-4b90-b6e4-24127457ab7a.png)
+   
+   ![check container registry](https://user-images.githubusercontent.com/96573282/148931218-1456c3d1-b0c7-4b90-b6e4-24127457ab7a.png)
 
  
 
