@@ -21,13 +21,13 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:
  
  
  
-## 1.	Create a Google Platform Project
+## 1.	Create a Google Cloud Platform Project
          
    a.	  Create a Google cloud console account
    
    b.	  Go to Billing section and set budget alerts
    
-   c.	  Enable the Cloud Build, Cloud Run, Container Registry, and Resource Manager APIs.
+   c.	  Enable the Cloud Build, Cloud Run, Container Registry, and Resource Manager APIs. https://console.cloud.google.com/apis/enableflow?apiid=cloudbuild.googleapis.com,run.googleapis.com,containerregistry.googleapis.com,cloudresourcemanager.googleapis.com&redirect=https:%2F%2Fcloud.google.com%2Fbuild%2Fdocs%2Fdeploying-builds%2Fdeploy-cloud-run&_ga=2.191143592.321388008.1642397353-1096716425.1641187615&_gac=1.185755227.1642245061.CjwKCAiA_omPBhBBEiwAcg7smcbC4T0EhLdsldj4gUSnJPDx23QOP-gUpwen8epr2fFNorMUJ3CDURoC87cQAvD_BwE&project=animated-alloy-337110
    
    d.	  Create your first project
     
@@ -38,7 +38,7 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:
   
    b.	  Add the attached Dockerfile into the Project root
    
-   c.	  Create a server Directory and a server.sh file inside the server folder 
+   c.	  Create a Directory named as server and a server.sh file inside the server folder 
 
 
 ##  3.	Containerizing the WebApp locally
