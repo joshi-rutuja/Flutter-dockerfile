@@ -65,7 +65,7 @@ To  deploy a Web App on Cloud Run, you need to follow these steps:
 				
 				
           docker run -i -p 8080:8080 -td flutter_docker
-   This command binds the port 8000 configured in the container to the TCP port 8080, accessible from the browser.
+   This command binds the port 8080 configured in the container to the TCP port 8080, accessible from the browser.
         
    
    e.	Proceed to view the application on localhost:8080 on your browser.
